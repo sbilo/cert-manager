@@ -17,7 +17,7 @@ FROM alpine:3.6
 RUN apk add --no-cache ca-certificates && \
   addgroup -S certmanager && adduser -S -G certmanager certmanager
 
-ADD cert-manager-ingress-shim_linux_amd64 /usr/bin/ingress-shim
+ADD cert-manager-ingress-shim_linux_arm /usr/bin/ingress-shim
 
 USER certmanager
 

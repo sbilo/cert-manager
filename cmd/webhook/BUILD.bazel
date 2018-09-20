@@ -5,7 +5,7 @@ go_image(
     name = "image",
     base = "@alpine//image",
     embed = [":go_default_library"],
-    goarch = "amd64",
+    goarch = "arm",
     goos = "linux",
     pure = "on",
     visibility = ["//visibility:public"],

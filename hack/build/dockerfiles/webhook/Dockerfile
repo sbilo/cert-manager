@@ -15,7 +15,7 @@
 FROM alpine:3.6
 
 RUN apk add --no-cache ca-certificates
-ADD cert-manager-webhook_linux_amd64 /usr/bin/webhook
+ADD cert-manager-webhook_linux_arm /usr/bin/webhook
 
 ENTRYPOINT ["/usr/bin/webhook"]
 ARG VCS_REF

@@ -101,7 +101,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: cert-manager
-          image: "quay.io/jetstack/cert-manager-controller:v0.5.0"
+          image: "docker.io/sbilo/cert-manager-controller:canary-arm"
           imagePullPolicy: IfNotPresent
           args:
           - --cluster-resource-namespace=$(POD_NAMESPACE)
