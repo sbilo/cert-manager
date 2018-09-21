@@ -153,7 +153,7 @@ spec:
       containers:
         - name: cert-manager
           image: "docker.io/sbilo/cert-manager-controller:canary-arm"
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always 
           args:
           - --cluster-resource-namespace=$(POD_NAMESPACE)
           - --leader-election-namespace=$(POD_NAMESPACE)

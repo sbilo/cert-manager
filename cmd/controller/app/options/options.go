@@ -80,7 +80,7 @@ const (
 )
 
 var (
-	defaultACMEHTTP01SolverImage = fmt.Sprintf("quay.io/jetstack/cert-manager-acmesolver:%s", util.AppVersion)
+	defaultACMEHTTP01SolverImage = fmt.Sprintf("sbilo/cert-manager-acmesolver:%s", util.AppVersion)
 
 	defaultEnabledControllers = []string{
 		issuerscontroller.ControllerName,
